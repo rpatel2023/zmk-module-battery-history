@@ -33,7 +33,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 static struct zmk_rpc_custom_subsystem_meta battery_history_meta = {
     ZMK_RPC_CUSTOM_SUBSYSTEM_UI_URLS("http://localhost:5173"),
     // Unsecured to allow easy access for battery monitoring
-        // Require an explicit Studio unlock, matching the other custom RPC
+    // Require an explicit Studio unlock, matching the other custom RPC
     // subsystems on this keyboard.
     .security = ZMK_STUDIO_RPC_HANDLER_SECURED,
 };
